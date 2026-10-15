@@ -204,3 +204,9 @@ print(type(tupla2))  # <class 'tuple'>
 # nie zachowuje kolejnosci
 # nie ma indeksu
 lista = [2, 5, 6, 8, 6, 7, 2, 8, 5, 9]
+
+zbior = set(lista)
+print(zbior) # {2, 5, 6, 7, 8, 9}
+print(type(zbior)) # <class 'set'>
+
+
