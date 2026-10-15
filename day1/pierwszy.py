@@ -118,8 +118,8 @@ print(f"Liczba: {a:.2f}")  # Liczba: 4.57
 print(a)  # 4.5678
 
 # %f - float
-print("Liczba %f" % a) # Liczba 4.567800
-print("Liczba %.2f" % a) # Liczba 4.57
+print("Liczba %f" % a)  # Liczba 4.567800
+print("Liczba %.2f" % a)  # Liczba 4.57
 
 # ctrl d - powielenie linijki
 # print("Liczba %f" % "Radek") # TypeError: must be real number, not str
@@ -137,7 +137,17 @@ Komentarz
     wielolinijkowy - dokumnetacja - docstring"""
 print(print.__doc__)
 
-print(100 / 3) # 33.333333333333336 float
+print(100 / 3)  # 33.333333333333336 float
 print(100 // 3)  # częśc całkowita dzielenia
 print(100 % 3)  # modulo - reszta z dzielnia
 print(10 % 3)
+
+zysk = 98078965431234
+print(f"Nasza duża liczba {zysk:,}")  # Nasza duża liczba 98,078,965,431,234
+print(f"Nasza duża liczba {zysk:_}")  # Nasza duża liczba 98_078_965_431_234
+print(f"Nasza duża liczba {zysk:_}".replace("_", " "))  # Nasza duża liczba 98 078 965 431 234
+print(f"Nasza duża liczba {zysk:_}".replace("_", "."))  # Nasza duża liczba 98.078.965.431.234
+
+liczba = 10_000_000_000_000
+print(type(liczba))  # <class 'int'>
+print(liczba)  # 10000000000000
