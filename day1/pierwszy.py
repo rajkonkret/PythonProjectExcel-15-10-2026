@@ -76,3 +76,18 @@ print(str("1") + str(0))
 print(float("1") + int(b))
 # 10
 # 1.0
+
+print(25 * "-")
+
+# teksty są niemutowalne
+tekst = "Witaj Świecie"
+print(tekst)
+print(type(tekst))
+# Witaj Świecie
+# <class 'str'>
+
+tekst.upper()
+print(tekst)
+print(tekst.upper())  # WITAJ ŚWIECIE
+nowy_tekst = tekst.upper()
+print(nowy_tekst)
