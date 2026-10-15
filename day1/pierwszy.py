@@ -121,6 +121,18 @@ print(a)  # 4.5678
 print("Liczba %f" % a) # Liczba 4.567800
 print("Liczba %.2f" % a) # Liczba 4.57
 
-# ctrl d -powielenie linijki
+# ctrl d - powielenie linijki
 # print("Liczba %f" % "Radek") # TypeError: must be real number, not str
 
+print("""
+Tekst
+    wielolinijkowy
+    """)
+# "Tekst
+#     wielolinijkowy
+#     "
+
+"""
+Komentarz
+    wielolinijkowy - dokumnetacja - docstring"""
+print(print.__doc__)
