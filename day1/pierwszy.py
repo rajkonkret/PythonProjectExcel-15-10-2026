@@ -155,4 +155,52 @@ print(liczba)  # 10000000000000
 # kolekcje
 # lista - zachowuje kolejność, pozwale przechowywac różne typy na raz
 lista = [1, 2, 3, 4, 5, 6, "Radek"]
+print(lista)  # [1, 2, 3, 4, 5, 6, 'Radek']
+print(type(lista))  # <class 'list'>
 
+lista = []  # pusta lista
+lista.append("Radek")
+lista.append("Radek")
+lista.append("Tomek")
+lista.append("Dawid")
+lista.append("Artur")
+
+print(lista)
+# ['Radek', 'Radek', 'Tomek', 'Dawid', 'Artur']
+
+# remove - usunięcie z listy, pierwszy z lewej
+lista.remove("Radek")
+print(lista)  # ['Radek', 'Tomek', 'Dawid', 'Artur']
+
+lista_copy = lista.copy()  # kopia elementów listy
+lista_k = lista  # skopiowany adres (referencje)
+print(lista_k)
+print(lista)
+# ['Radek', 'Tomek', 'Dawid', 'Artur']
+# ['Radek', 'Tomek', 'Dawid', 'Artur']
+
+lista.clear()
+print(lista_k)  # []
+print(lista)  # []
+print(lista_copy)  # ['Radek', 'Tomek', 'Dawid', 'Artur']
+
+# krotka - kolekcja niemutowalna
+# pomaga lepiej wykorzystac pamieć
+krotka = tuple(lista_copy)
+print(krotka)
+print(type(krotka))
+# ('Radek', 'Tomek', 'Dawid', 'Artur')
+# <class 'tuple'>
+
+tupla1 = "Radek", "Tomek"
+print(type(tupla1))  # <class 'tuple'>
+
+tupla2 = ("Radek",)
+print(type(tupla2))  # <class 'tuple'>
+
+# tupla1[0] = "190"  # TypeError: 'tuple' object does not support item assignment
+
+# zbiór - przechowuje unikalne wartosci
+# nie zachowuje kolejnosci
+# nie ma indeksu
+lista = [2, 5, 6, 8, 6, 7, 2, 8, 5, 9]
