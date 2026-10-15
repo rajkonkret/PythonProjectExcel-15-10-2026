@@ -299,3 +299,33 @@ match odp:
     case _:
         print("inny")
 # inny
+
+for i in range(5):  # od 0 do 4
+    print(i)
+
+for i in lista_copy:
+    print(i)
+
+# Radek
+# Tomek
+# Dawid
+# Artur
+
+licznik = 0
+while licznik < 10:
+    licznik += 1
+    print(licznik)
+
+# print(5 / 0)
+try:
+    # print(5 / 0)
+    wynik = 90 / 89
+except ZeroDivisionError:
+    print("Nie dziel przez zero")
+except Exception as e:
+    print("Bład:", e)
+else:  # gdy nie ma błedu
+    print(wynik)
+finally:
+    print("Zawsze")
+# Nie dziel przez zero
