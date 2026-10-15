@@ -206,7 +206,15 @@ print(type(tupla2))  # <class 'tuple'>
 lista = [2, 5, 6, 8, 6, 7, 2, 8, 5, 9]
 
 zbior = set(lista)
-print(zbior) # {2, 5, 6, 7, 8, 9}
-print(type(zbior)) # <class 'set'>
+print(zbior)  # {2, 5, 6, 7, 8, 9}
+print(type(zbior))  # <class 'set'>
 
+pusty_zbior = set()  # tylko i wyłącznie tak
+print(pusty_zbior)  # set()
 
+pusty_zbior.add(15)
+pusty_zbior.add(15)
+pusty_zbior.add(45)
+pusty_zbior.add(15)
+pusty_zbior.add(34)
+print(pusty_zbior)  # {34, 45, 15}
