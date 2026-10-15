@@ -151,3 +151,8 @@ print(f"Nasza duża liczba {zysk:_}".replace("_", "."))  # Nasza duża liczba 98
 liczba = 10_000_000_000_000
 print(type(liczba))  # <class 'int'>
 print(liczba)  # 10000000000000
+
+# kolekcje
+# lista - zachowuje kolejność, pozwale przechowywac różne typy na raz
+lista = [1, 2, 3, 4, 5, 6, "Radek"]
+
