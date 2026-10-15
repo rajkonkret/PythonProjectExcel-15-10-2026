@@ -67,3 +67,12 @@ print(name)
 name = 90
 print(name)  # 90
 print(type(name))  # <class 'int'>
+
+# rzutowanie
+a = "1"
+b = 0
+# print(a + b) # TypeError: can only concatenate str (not "int") to str
+print(str("1") + str(0))
+print(float("1") + int(b))
+# 10
+# 1.0
