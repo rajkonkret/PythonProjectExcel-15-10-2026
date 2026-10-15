@@ -136,3 +136,8 @@ Tekst
 Komentarz
     wielolinijkowy - dokumnetacja - docstring"""
 print(print.__doc__)
+
+print(100 / 3) # 33.333333333333336 float
+print(100 // 3)  # częśc całkowita dzielenia
+print(100 % 3)  # modulo - reszta z dzielnia
+print(10 % 3)
