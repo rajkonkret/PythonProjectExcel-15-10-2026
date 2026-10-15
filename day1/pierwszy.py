@@ -218,3 +218,40 @@ pusty_zbior.add(45)
 pusty_zbior.add(15)
 pusty_zbior.add(34)
 print(pusty_zbior)  # {34, 45, 15}
+
+#  słownik - {klucz : wartosc}
+# None
+# odpowiednik jsona
+slownik = {"name": "Radek", "age": 56}
+print(slownik)  # {'name': 'Radek', 'age': 56}
+print(type(slownik))  # <class 'dict'>
+
+print(slownik.keys())
+print(slownik.values())
+print(slownik.items())
+# dict_items([('name', 'Radek'), ('age', 56)])
+
+print(slownik['name'])  # Radek
+# print(slownik['imie'])  # KeyError: 'imie'
+print(slownik.get('imie'))  # None
+print(slownik.get("age"))  # 56
+
+pusty_slownik = {}
+print(type(pusty_slownik))  # <class 'dict'>
+print(pusty_slownik)  # {}
+
+# # input()  # wczytaj
+# tekst = input("Podaj imię:")
+# print(tekst)
+# Podaj imię:Radek
+# Radek
+
+# napisac apliakcję kalkulator
+a = int(input("Podaj pierwszą liczbę:"))
+b = input("Podaj drugą liczbę:")
+print(a + float(b))
+# Podaj pierwszą liczbę:3
+# Podaj drugą liczbę:4
+# 7.0
+
+print(eval("5 + 6"))  # 11
