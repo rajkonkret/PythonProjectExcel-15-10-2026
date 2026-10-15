@@ -247,11 +247,55 @@ print(pusty_slownik)  # {}
 # Radek
 
 # napisac apliakcję kalkulator
-a = int(input("Podaj pierwszą liczbę:"))
-b = input("Podaj drugą liczbę:")
-print(a + float(b))
+# a = int(input("Podaj pierwszą liczbę:"))
+# b = input("Podaj drugą liczbę:")
+# print(a + float(b))
 # Podaj pierwszą liczbę:3
 # Podaj drugą liczbę:4
 # 7.0
 
 print(eval("5 + 6"))  # 11
+
+print(pusty_slownik)
+pusty_slownik['name'] = "Radek"
+print(pusty_slownik)  # {'name': 'Radek'}
+
+pusty_slownik.update({"age": 67})
+print(pusty_slownik)
+
+print(pusty_slownik.items())
+
+# [('name', 'Radek'), ('age', 67)]
+p_s = {}
+print(p_s)  # {}
+p_s.update([('name', 'Radek'), ('age', 67)])
+print(p_s)
+# {'name': 'Radek', 'age': 67}
+
+name = "Radek"
+if name == "Radek":
+    print("Radek")
+elif name == "Tomek":
+    print("Tomek")
+else:
+    print("Inny")
+# Radek
+
+name = "Radek"
+if name:
+    print("Ok")
+
+print(bool(name))  # True
+
+# od pythona 3.10
+# match case
+
+odp = "java"
+match odp:
+    case "python":
+        print("python")
+    case "jave":
+        print("java")
+    case _:
+        print("inny")
+# inny
