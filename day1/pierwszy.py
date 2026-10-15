@@ -91,3 +91,36 @@ print(tekst)
 print(tekst.upper())  # WITAJ ŚWIECIE
 nowy_tekst = tekst.upper()
 print(nowy_tekst)
+
+zmienna1 = "GROSS"
+zmienna2 = "groß"
+
+print(zmienna1 == zmienna2)  # False
+print(zmienna1.lower() == zmienna2.lower())  # False
+print(zmienna1.casefold() == zmienna2.casefold())  # True
+
+# typ logiczny
+# True, False
+print(1 != 0)  # True
+
+name = "Radek"
+# Imię pacjenta:... Dane:
+print("Imię pacjenta:" + name + "Dane")
+print("Imię pacjenta:", name, "Dane")
+
+# f-string
+print(f"Imię pacjenta: {name} Dane:")
+# print("Imię pacjenta:" + name + "Dane")
+
+a = 4.5678
+print(f"Liczba: {a}")  # Liczba: 4.5678
+print(f"Liczba: {a:.2f}")  # Liczba: 4.57
+print(a)  # 4.5678
+
+# %f - float
+print("Liczba %f" % a) # Liczba 4.567800
+print("Liczba %.2f" % a) # Liczba 4.57
+
+# ctrl d -powielenie linijki
+# print("Liczba %f" % "Radek") # TypeError: must be real number, not str
+
