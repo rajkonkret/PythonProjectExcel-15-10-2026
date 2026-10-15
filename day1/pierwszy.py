@@ -55,3 +55,15 @@ print(0.1 + 0.2)
 # 0.30000000000000004
 
 # decimal - pozwala ominąć problem zaokrąglenia
+
+# zmienna - pudełko na dane
+# snake_case
+
+# typowanie dynamiczne
+name = "Radek"
+print(type(name))  # <class 'str'>
+print(name)
+
+name = 90
+print(name)  # 90
+print(type(name))  # <class 'int'>
