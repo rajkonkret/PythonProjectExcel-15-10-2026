@@ -38,5 +38,25 @@ ws['A2'].font = Font(color='0000FF')
 ws['A1'].fill = PatternFill("lightVertical", start_color='38e3ff')
 ws['A3'].fill = PatternFill("darkTrellis", start_color='1188A7')
 
+# ramka
+# "dashDot",
+#     "dashDotDot",
+#     "dashed",
+#     "dotted",
+#     "double",
+#     "hair",
+#     "medium",
+#     "mediumDashDot",
+#     "mediumDashDotDot",
+#     "mediumDashed",
+#     "slantDashDot",
+#     "thick",
+#     "thin",
+# "none"
+my_border = Side(border_style="thin", color="000000")
+
+ws['A1'].border = Border(
+    top=my_border, left=my_border, right=my_border, bottom=my_border
+)
 wb.save(filename)
 wb.close()
