@@ -36,3 +36,10 @@ ws['T2'] = '=SUMIF(E2:E16328, "Sports", K2:K16328)'
 
 wb.save(filename)
 wb.close()
+
+# zaokrąglenie do najbliższego górnego 25
+ws['U1'] = "Rounded sum of Sports Sales"
+ws['U2'] = '=CEILING(T2, 25)'
+
+wb.save(filename)
+wb.close()
