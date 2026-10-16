@@ -68,4 +68,17 @@ print(df)
 # 1002     Tim    75     USA    4.5   Ameryka
 # 1003   Jenny    33  Niemcy    4.5    Europa
 
+# sortowanie danych
+print(df.sort_values(['wiek']))
+# numer
+# 1003   Jenny    33  Niemcy    4.5    Europa
+# 1000    John    45     USA    4.5   Ameryka
+# 1001    Mark    55  Włochy    4.5    Europa
+# 1002     Tim    75     USA    4.5   Ameryka
 
+print(df.sort_values(['kontynent', 'wiek']))
+# numer
+# 1000    John    45     USA    4.5   Ameryka
+# 1002     Tim    75     USA    4.5   Ameryka
+# 1003   Jenny    33  Niemcy    4.5    Europa
+# 1001    Mark    55  Włochy    4.5    Europa
