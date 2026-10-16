@@ -35,5 +35,8 @@ print(ws.title)
 ws['A1'].font = Font(color='FF0000', bold=True, size=12)
 ws['A2'].font = Font(color='0000FF')
 
+ws['A1'].fill = PatternFill("lightVertical", start_color='38e3ff')
+ws['A3'].fill = PatternFill("darkTrellis", start_color='1188A7')
+
 wb.save(filename)
 wb.close()
