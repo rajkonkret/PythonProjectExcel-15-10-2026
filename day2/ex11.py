@@ -42,10 +42,27 @@ python_int = int(x)
 json_str = json.dumps({"value": python_int})
 print(json_str)  # {"value": 64}
 
-
 # # [[1 2 3]
 # #  [4 5 6]]
 # broadcasting
 print(array2 + 1)
 # [[2 3 4]
 #  [5 6 7]]
+
+print(array2 + array2)
+# [[ 2  4  6]
+#  [ 8 10 12]]
+
+import math
+
+print(math.sqrt(25))  # 5.0
+
+# print(math.sqrt(array2))  # TypeError: only 0-dimensional arrays can be converted to Python scalars
+
+# numpy posiada własne metody
+print(np.sqrt(array2))
+# [[1.         1.41421356 1.73205081]
+#  [2.         2.23606798 2.44948974]]
+
+# suma elementów tablicy
+print(array2.sum())  # 21
