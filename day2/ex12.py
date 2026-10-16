@@ -30,3 +30,42 @@ data = [
     ['Tim', 75, "USA", 4.5, "Ameryka"],
     ['Jenny', 33, "Niemcy", 4.5, "Europa"],
 ]
+
+df = pd.DataFrame(
+    data=data,
+    columns=["imie", 'wiek', 'kraj', 'ocena', 'kontynent'],
+    index=[1001, 1000, 1002, 1003]
+)
+print(df)
+# memory usage: 324.0 bytes
+#        imie  wiek    kraj  ocena kontynent
+# 1001   Mark    55  Włochy    4.5    Europa
+# 1000   John    45     USA    4.5   Ameryka
+# 1002    Tim    75     USA    4.5   Ameryka
+# 1003  Jenny    33  Niemcy    4.5    Europa
+
+df.info()
+# Data columns (total 5 columns):
+#  #   Column     Non-Null Count  Dtype
+# ---  ------     --------------  -----
+#  0   imie       4 non-null      str
+#  1   wiek       4 non-null      int64
+#  2   kraj       4 non-null      str
+#  3   ocena      4 non-null      float64
+#  4   kontynent  4 non-null      str
+# dtypes: float64(1), int64(1), str(3)
+# memory usage: 192.0 bytes
+
+print(df.index)  # Index([1001, 1000, 1002, 1003], dtype='int64')
+
+df.index.name = 'numer'
+print(df)
+
+#         imie  wiek    kraj  ocena kontynent
+# numer
+# 1001    Mark    55  Włochy    4.5    Europa
+# 1000    John    45     USA    4.5   Ameryka
+# 1002     Tim    75     USA    4.5   Ameryka
+# 1003   Jenny    33  Niemcy    4.5    Europa
+
+
