@@ -58,3 +58,10 @@ ws['X2'] = '=FLOOR(T2, 1)'
 wb.save(filename)
 wb.close()
 # =ZAOKR.W.DÓŁ(T2; 1)
+
+# ROUND
+ws['W1'] = "Rounded"
+ws['W2'] = '=ROUND(T2, 0)'
+
+wb.save(filename)
+wb.close()
