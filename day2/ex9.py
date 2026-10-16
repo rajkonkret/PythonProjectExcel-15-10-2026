@@ -29,3 +29,11 @@ wb = openpyxl.load_workbook(filename)
 ws = wb['Video Games Sales Data']
 
 print(ws.title)
+
+# https://htmlcolorcodes.com/
+# RGB -> Red, Green, Blue
+ws['A1'].font = Font(color='FF0000', bold=True, size=12)
+ws['A2'].font = Font(color='0000FF')
+
+wb.save(filename)
+wb.close()
