@@ -41,3 +41,11 @@ print(type(x))  # <class 'numpy.int64'>
 python_int = int(x)
 json_str = json.dumps({"value": python_int})
 print(json_str)  # {"value": 64}
+
+
+# # [[1 2 3]
+# #  [4 5 6]]
+# broadcasting
+print(array2 + 1)
+# [[2 3 4]
+#  [5 6 7]]
