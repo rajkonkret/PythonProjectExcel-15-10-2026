@@ -78,7 +78,21 @@ ws.conditional_formatting.add(
     )
 )
 
+fill_th = PatternFill(
+    start_color='30EE90',
+    end_color='10EE90',
+    fill_type=FILL_PATTERN_DARKUP
+)
 
+ws.conditional_formatting.add(
+    'G2:K16328',
+    CellIsRule(
+        operator="<",  # "lessThan"
+        formula=[2],
+        fill=fill_th,
+        font=Font(color='FBDCBA')
+    )
+)
 
 wb.save(filename)
 wb.close()
