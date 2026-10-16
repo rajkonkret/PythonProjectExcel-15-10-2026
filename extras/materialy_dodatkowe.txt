@@ -120,4 +120,4 @@ spam %= 1    spam = spam % 1
 https://www.hackerrank.com/dashboard
 https://pl.altapps.net/soft/hackerrank-com?page=2
 https://www.w3schools.com/python/
-https://naukapythona.com.pl/
+https://naukapythona.pl/
