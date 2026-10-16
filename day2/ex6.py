@@ -43,3 +43,18 @@ ws['U2'] = '=CEILING(T2, 25)'
 
 wb.save(filename)
 wb.close()
+
+# zaokrąglenie do najbliższego górnego całkowitego
+ws['V1'] = "Rounded sum of Sports Sales"
+ws['V2'] = '=CEILING(T2, 1)'
+
+wb.save(filename)
+wb.close()
+
+# zaokrąglenie do najbliższego dolnego całkowitego
+ws['X1'] = "FLOOR"
+ws['X2'] = '=FLOOR(T2, 1)'
+
+wb.save(filename)
+wb.close()
+# =ZAOKR.W.DÓŁ(T2; 1)
