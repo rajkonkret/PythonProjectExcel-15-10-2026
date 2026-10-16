@@ -18,3 +18,12 @@ ws['Q2'] = '=COUNTA(E2:E16328)'
 
 wb.save(filename)
 wb.close()
+
+ws['S1'] = 'Total Sports Sales'
+ws['S2'] = '=COUNTIF(E2:E16328, "Sports")'
+
+wb.save(filename)
+wb.close()
+
+print(ws['S2'].value)
+# =COUNTIF(E2:E16328, "Sports")
