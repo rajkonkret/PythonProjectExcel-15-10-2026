@@ -58,5 +58,27 @@ my_border = Side(border_style="thin", color="000000")
 ws['A1'].border = Border(
     top=my_border, left=my_border, right=my_border, bottom=my_border
 )
+
+# formaowanie warunkowe
+fill = PatternFill(
+    start_color='90EE90',
+    end_color='90EE90',
+    fill_type='solid'
+)
+
+# ">": "greaterThan", ">=": "greaterThanOrEqual", "<": "lessThan", "<=": "lessThanOrEqual",
+#               "=": "equal", "==": "equal", "!=": "notEqual"
+ws.conditional_formatting.add(
+    'G2:K16328',
+    CellIsRule(
+        operator="greaterThan",
+        formula=[5],
+        fill=fill,
+        font=Font(color='FF00FF')
+    )
+)
+
+
+
 wb.save(filename)
 wb.close()
